@@ -2,12 +2,18 @@
 require "rails_helper"
 
 RSpec.describe 'Project', type: :model do
+
+  #testing to ensure project validation with description and title testing as well as a valid project
   context "validations tests" do
     it "ensures the description is present" do
       project = Project.new(description: "Content of the description")
       expect(project.valid?).to eq(false)
     end
 
+    it "ensures the title is present" do
+        project = Project.new(title: "Title")
+        expect(project.valid?).to eq(false)
+    end
     
     it "should be able to save project" do
       project = Project.new(title: "Title", description: "Some description content goes here")
@@ -15,6 +21,7 @@ RSpec.describe 'Project', type: :model do
     end
   end
 
+  #create three projects with test parameters and make sure they all appear in the database
   context "scopes tests" do
     let(:params) { { title: "Title", description: "some description" } }
     before(:each) do

@@ -2,6 +2,8 @@
 require 'rails_helper'
 
 RSpec.feature "Projects", type: :feature do
+
+  #tests new project forms by filling the forms then attempting to submit them
   context "Create new project" do
     before(:each) do
       visit new_project_path
@@ -22,6 +24,7 @@ RSpec.feature "Projects", type: :feature do
     end
   end
 
+  #tests update forms by filling or not filling then clicking button
   context "Update project" do
     let(:project) { Project.create(title: "Test title", description: "Test content") }
     before(:each) do
@@ -45,6 +48,7 @@ RSpec.feature "Projects", type: :feature do
     end
   end
 
+  #tests destroying projects by clicking and expecting certain content
   context "Remove existing project" do
     let!(:project) { Project.create(title: "Test title", description: "Test content") }
     scenario "remove project" do
