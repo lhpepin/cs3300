@@ -4,7 +4,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: 'debuccs/cs3300-code-esaas'
+      - image: 'lhpepin/code-esaas'
     steps:
       - checkout
       - run:
