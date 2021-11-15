@@ -4,7 +4,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: 'lhpepin/code-esaas'
+      - image: 'lhpepin/code-esaas:1.0'
     steps:
       - checkout
       - run:
