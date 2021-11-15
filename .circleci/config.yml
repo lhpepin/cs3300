@@ -6,11 +6,12 @@ jobs:
   build:
     docker:
       - image: 'lhpepin/code-esaas:1.0'
+    parallelism: 4
     steps:
       - checkout
       - run:
           name: rspec
-          command: bundle install && rails webpacker:install && npm install --global yarn && bundle exec rake db:migrate RAILS_ENV=test && bundle exec rspec
+          command: npm install --global yarn && bundle install && rails webpacker:install && bundle exec rake db:migrate RAILS_ENV=test && bundle exec rspec
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
