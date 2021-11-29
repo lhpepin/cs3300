@@ -1,10 +1,13 @@
-
 require "rails_helper"
 
 RSpec.describe 'Project', type: :model do
 
   #testing to ensure project validation with description and title testing as well as a valid project
   context "validations tests" do
+    before(:each) do
+      login_user()
+    end
+
     it "ensures the description is present" do
       project = Project.new(description: "Content of the description")
       expect(project.valid?).to eq(false)

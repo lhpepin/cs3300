@@ -1,93 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/lpepin/School_FA21/CS3300/cs3300_portfolio/app/controllers/projects_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/home/lpepin/School_FA21/CS3300/cs3300_portfolio/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/home/lpepin/School_FA21/CS3300/cs3300_portfolio/app/models/project.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/lpepin/School_FA21/CS3300/cs3300_portfolio/app/models/application_record.rb": {
         "lines": [
           1,
           1,
@@ -106,6 +20,90 @@
       },
       "/home/lpepin/School_FA21/CS3300/cs3300_portfolio/app/channels/application_cable/connection.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/lpepin/School_FA21/CS3300/cs3300_portfolio/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/lpepin/School_FA21/CS3300/cs3300_portfolio/app/controllers/projects_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
           0,
           0,
           0,
@@ -152,8 +150,29 @@
         ],
         "branches": {
         }
+      },
+      "/home/lpepin/School_FA21/CS3300/cs3300_portfolio/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/lpepin/School_FA21/CS3300/cs3300_portfolio/app/models/user.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1637014122
+    "timestamp": 1638227196
   }
 }
