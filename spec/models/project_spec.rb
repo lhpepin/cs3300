@@ -4,9 +4,7 @@ RSpec.describe 'Project', type: :model do
 
   #testing to ensure project validation with description and title testing as well as a valid project
   context "validations tests" do
-    before(:each) do
-      login_user()
-    end
+    let(:user){ login_user }
 
     it "ensures the description is present" do
       project = Project.new(description: "Content of the description")
@@ -26,7 +24,9 @@ RSpec.describe 'Project', type: :model do
 
   #create three projects with test parameters and make sure they all appear in the database
   context "scopes tests" do
+    let(:user){ login_user }
     let(:params) { { title: "Title", description: "some description" } }
+    
     before(:each) do
       Project.create(params)
       Project.create(params)
